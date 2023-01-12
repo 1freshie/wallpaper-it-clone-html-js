@@ -90,7 +90,7 @@
       <div id="homepage-image--sinful-style"
         class="w-full h-80 md:h-full bg-secondary--dark-cyan flex flex-1 flex-col justify-center items-center p-12 pt-14">
         <div id="image--sinful-style" class="w-full h-2/5 md:h-full"
-          style="background: url(img/envy-homepage-banner-sinful-style.svg) no-repeat; background-size: 98%; background-position: center center;">
+          style="background: url(img/envy-homepage-banner-sinful-style.svg) no-repeat; background-size: 95%; background-position: center center;">
         </div>
         <button id="button--shop-wallpaper"
           class="mt-6 w-44 h-9 bg-[#E4BE8C] text-primary--black text-sm text-center tracking-[2px] uppercase rounded-full cursor-pointer">
@@ -110,7 +110,48 @@
       <div id="our-brands--content" class="w-full h-full p-6 mt-8 mb-2">
         <div class="w-full h-full flex flex-1 justify-between items-center">
           <h2 class="font-dm-serif font-semibold text-2xl text-primary--black">Our <span
-              class="text-primary--pale-teal italic">Brands</span></h2>
+              class="text-primary--pale-teal italic">Brands</span>
+          </h2>
+          <div id="arrow-buttons" class="flex justify-between items-center gap-x-2 font-bold">
+            <button id="arrow-button--left"
+              class="w-8 h-8 flex flex-1 justify-center items-center border-4 border-primary--pale-teal rounded-full bg-primary--pale-teal/[0.2] cursor-pointer duration-300 hover:opacity-70">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#161615" class="bi bi-chevron-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+              </svg>
+            </button>
+            <button id="arrow-button--right"
+              class="w-8 h-8 flex flex-1 justify-center items-center border-4 border-primary--pale-teal rounded-full bg-primary--pale-teal/[0.2] cursor-pointer duration-300 hover:opacity-70">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO: adding the images and the slider to work! -->
+    </section>
+
+    <section id="section--wallpapers-showcase-grid" class="w-full h-full">
+      <div class="w-full h-full grid grid-cols-1">
+        <div id="sfe-paint--container" class="cursor-pointer hover:underline">
+          <img src="img/sfe-paint-hpg.jpg" alt="Superfresco Easy Paint" class="w-100">
+          <div class="p-6 flex flex-col justify-center items-center gap-y-2">
+            <h2 class="font-dm-serif font-semibold text-lg">Superfresco Easy Paint</h2>
+            <p class="font-avenir-book text-sm uppercase tracking-[3px]">Shop now</p>
+          </div>
+        </div>
+
+        <div id="new-collections--container" class="cursor-pointer hover:underline">
+          <img src="img/new_2021.jpg" alt="Our Newest Collections" class="w-100">
+          <div class="p-6 flex flex-col justify-center items-center gap-y-2">
+            <h2 class="font-dm-serif font-semibold text-lg">Our Newest Collections</h2>
+            <p class="font-avenir-book text-sm uppercase tracking-[3px]">Shop the collection</p>
+          </div>
         </div>
       </div>
     </section>
