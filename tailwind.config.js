@@ -7,7 +7,23 @@ module.exports = {
       "avenir-book": ["Avenir-Book", "sans-serif"],
     },
     fontSize: {
+      "xs": [
+        "10px",
+        {
+          lineHeight: "16px",
+          letterSpacing: "0.4px",
+          fontWeight: "400",
+        },
+      ],
       "sm": [
+        "12px",
+        {
+          lineHeight: "20px",
+          letterSpacing: "0.4px",
+          fontWeight: "400",
+        },
+      ],
+      "base": [
         "18px",
         {
           lineHeight: "28px",
@@ -15,7 +31,7 @@ module.exports = {
           fontWeight: "400",
         },
       ],
-      "base": [
+      "lg": [
         "20px",
         {
           lineHeight: "28px",
@@ -23,7 +39,7 @@ module.exports = {
           fontWeight: "400",
         },
       ],
-      "lg": [
+      "xl": [
         "30px",
         {
           lineHeight: "36px",
@@ -31,7 +47,7 @@ module.exports = {
           fontWeight: "400",
         },
       ],
-      "xl": [
+      "2xl": [
         "32px",
         {
           lineHeight: "40px",
@@ -39,7 +55,7 @@ module.exports = {
           fontWeight: "400",
         },
       ],
-      "2xl": [
+      "3xl": [
         "40px",
         {
           lineHeight: "48px",
