@@ -559,6 +559,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -724,16 +728,31 @@ video {
        column-gap: 0.75rem;
 }
 
-.gap-y-4 {
-  row-gap: 1rem;
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .gap-y-5 {
   row-gap: 1.25rem;
 }
 
-.gap-y-10 {
-  row-gap: 2.5rem;
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .rounded-full {
@@ -757,10 +776,6 @@ video {
   border-top-width: 2px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -772,33 +787,6 @@ video {
 
 .border-primary--black\/10 {
   border-color: rgb(22 22 21 / 0.1);
-}
-
-.border-primary--black\/20 {
-  border-color: rgb(22 22 21 / 0.2);
-}
-
-.border-primary--black\/60 {
-  border-color: rgb(22 22 21 / 0.6);
-}
-
-.border-\[\#FFFFFF\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-primary--black\/25 {
-  border-color: rgb(22 22 21 / 0.25);
-}
-
-.border-\[\#999\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(153 153 153 / var(--tw-border-opacity));
-}
-
-.border-\[\#888\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(136 136 136 / var(--tw-border-opacity));
 }
 
 .border-\[\#666\] {
@@ -864,23 +852,9 @@ video {
   padding: 2rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .pt-14 {
@@ -930,6 +904,13 @@ video {
 .text-lg {
   font-size: 20px;
   line-height: 28px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+}
+
+.text-xl {
+  font-size: 30px;
+  line-height: 36px;
   letter-spacing: 0.6px;
   font-weight: 400;
 }
@@ -1013,6 +994,11 @@ video {
 
 .hover\:opacity-70:hover {
   opacity: 0.7;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 @media (min-width: 768px) {
