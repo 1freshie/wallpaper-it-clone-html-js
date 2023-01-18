@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       "dm-serif": ["DM Serif Display", "serif"],
-      "avenir-book": ["Avenir-Book", "sans-serif"],
+      "avenir-book": ["avenir", "sans-serif"],
     },
     fontSize: {
       "xs": [

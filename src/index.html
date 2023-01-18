@@ -69,42 +69,151 @@
       </div>
     </nav>
 
-    <nav id="navbar--large"
-      class="hidden lg:w-full lg:h-28 lg:flex lg:flex-1 lg:justify-between lg:items-center lg:gap-x-20 lg:border-b-4 lg:border-primary--pale-teal px-8">
-      <!-- <div class="w-1/3 h-1/3 flex justify-center items-center cursor-pointer"> -->
-      <img src="img/wallpaperit-Logo.png" alt="WallpaperIt Logo" class="">
-      <!-- </div> -->
-      <div id="search-bar" class="w-1/3 h-8 relative font-avenir-book text-sm flex justify-center items-center">
-        <input type="text" id="search-bar--input" placeholder="Search for products..."
-          class="w-full h-full border-2 border-primary--pale-teal rounded-full p-5 focus:outline-none">
-        <div class="w-10 h-10 absolute right-3">
-          <div class="flex flex-1 justify-center items-center cursor-pointer">
-            <div class="w-10 h-10"
-              style="background: url(img/wallpaperit_sprite.png) no-repeat -50px -55px;background-size: auto;">
+    <nav id="navbar--large" class="hidden lg:block lg:w-full lg:h-40 lg:border-b-4 lg:border-primary--pale-teal lg:p-8">
+      <div id="main-search" class="flex flex-1 justify-between items-center gap-x-20">
+        <img src="img/wallpaperit-Logo.png" alt="WallpaperIt Logo" class="">
+        <div id="search-bar" class="w-1/3 h-8 relative font-avenir-book text-sm flex justify-center items-center">
+          <input type="text" id="search-bar--input" placeholder="Search for products..."
+            class="w-full h-full border-2 border-primary--pale-teal rounded-full p-5 focus:outline-none text-base">
+          <div class="w-10 h-10 absolute right-3">
+            <div class="flex flex-1 justify-center items-center cursor-pointer">
+              <div class="w-10 h-10"
+                style="background: url(img/wallpaperit_sprite.png) no-repeat -50px -55px;background-size: auto;">
+              </div>
             </div>
           </div>
         </div>
+        <ul class="h-full flex justify-center items-center gap-x-12">
+          <li class="flex flex-col justify-center items-center cursor-pointer">
+            <div class="w-7 h-7"
+              style="background: url(img/wallpaperit_sprite.png) no-repeat -113px -56px; background-size: auto;">
+            </div>
+            <span class="font-avenir-book text-sm tracking-[1px]">Sign In</span>
+          </li>
+          <li class="flex flex-col justify-center items-center cursor-pointer">
+            <div class="w-8 h-8"
+              style="background: url(img/wallpaperit_sprite.png) no-repeat -10px -57px; background-size: auto;">
+            </div>
+            <span class="font-avenir-book text-sm tracking-[1px]">Wishlist</span>
+          </li>
+          <li class="flex flex-col justify-center items-center cursor-pointer">
+            <div class="w-7 h-7"
+              style="background: url(img/wallpaperit_sprite.png) no-repeat -5px -107px; background-size: auto;">
+            </div>
+            <span class="font-avenir-book text-sm tracking-[1px]">Bag</span>
+          </li>
+        </ul>
       </div>
-      <div class="h-full flex justify-center items-center gap-x-12">
-        <div class="flex flex-col justify-center items-center cursor-pointer">
-          <div class="w-7 h-7"
-            style="background: url(img/wallpaperit_sprite.png) no-repeat -113px -56px; background-size: auto;">
-          </div>
-          <span class="font-avenir-book text-sm tracking-[1px]">Sign In</span>
-        </div>
-        <div class="flex flex-col justify-center items-center cursor-pointer">
-          <div class="w-8 h-8"
-            style="background: url(img/wallpaperit_sprite.png) no-repeat -10px -57px; background-size: auto;">
-          </div>
-          <span class="font-avenir-book text-sm tracking-[1px]">Wishlist</span>
-        </div>
-        <div class="flex flex-col justify-center items-center cursor-pointer">
-          <div class="w-7 h-7"
-            style="background: url(img/wallpaperit_sprite.png) no-repeat -5px -107px; background-size: auto;">
-          </div>
-          <span class="font-avenir-book text-sm tracking-[1px]">Bag</span>
-        </div>
-      </div>
+
+      <ul id="navbar" class="w-full h-full flex flex-1 justify-around items-center font-avenir-book">
+        <li class="relative inline-block">
+          <button class="text-base font-semibold tracking-[4px] cursor-pointer p-3 uppercase">
+            <span class="flex justify-center items-center">Wallpaper <span class="w-4 h-4"
+                style="background: url(img/wallpaperit_sprite.png) no-repeat -158px -2px; background-size: auto;">
+              </span>
+            </span>
+          </button>
+          <!-- <div class="dropdown-content">
+            <div class="dropdown__design-items--container">
+              <h1>Shop By Design</h1>
+              <div class="dropdown__design-items">
+                <a href="#">Animal</a>
+                <a href="#">Bird</a>
+                <a href="#">Brick</a>
+                <a href="#">Damask</a>
+                <a href="#">Floral</a>
+                <a href="#">Geometric</a>
+                <a href="#">Leaves</a>
+                <a href="#">Plain</a>
+                <a href="#">Stripe</a>
+                <a href="#">Tile</a>
+                <a href="#">Trail</a>
+                <a href="#">Trees</a>
+                <a href="#">Wood</a>
+                <div class="design-items__underlined">
+                  <a href="#">View All</a>
+                  <a href="#">New Arrivals</a>
+                  <a href="#">Decorating Tools</a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown__colour-items--container">
+              <h1>Shop By Colour</h1>
+              <div class="dropdown__colour-items">
+                <a href="#">Black</a>
+                <a href="#">Blue</a>
+                <a href="#">Brown</a>
+                <a href="#">Cream</a>
+                <a href="#">Glitter</a>
+                <a href="#">Green</a>
+                <a href="#">Gold</a>
+                <a href="#">Grey</a>
+                <a href="#">Metallic</a>
+                <a href="#">Neutral</a>
+                <a href="#">Pink</a>
+                <a href="#">Purple</a>
+                <a href="#">Red</a>
+                <a href="#">Rose Gold</a>
+                <a href="#">Silver</a>
+                <a href="#">Teal</a>
+                <a href="#">White</a>
+                <a href="#">Yellow</a>
+              </div>
+            </div>
+            <div class="dropdown__room-items--container">
+              <h1>Shop By Room</h1>
+              <div class="dropdown__room-items__1">
+                <a href="#">Bathroom</a>
+                <a href="#">Bedroom</a>
+                <a href="#">Dining Room</a>
+              </div>
+              <div class="dropdown__room-items__2">
+                <a href="#">Kids</a>
+                <a href="#">Kitchen</a>
+                <a href="#">Living Room</a>
+              </div>
+            </div>
+            <div class="dropdown__brand-items--container">
+              <h1>Shop By Brand</h1>
+              <div class="dropdown__brand-items">
+                <a href="#">Envy</a>
+                <a href="#">Joules</a>
+                <a href="#">Joules Kids</a>
+                <a href="#">Laura Ashley</a>
+                <a href="#">Next</a>
+                <a href="#">Superfresco Easy</a>
+              </div>
+            </div>
+          </div> -->
+        </li>
+        <li class="relative inline-block">
+          <button class="text-base font-semibold tracking-[4px] cursor-pointer p-3 uppercase"><span
+              class="flex justify-center items-center">Paint <span class="w-4 h-4"
+                style="background: url(img/wallpaperit_sprite.png) no-repeat -158px -2px; background-size: auto;">
+              </span>
+            </span></button>
+        </li>
+        <li class="relative inline-block">
+          <button class="text-base font-semibold tracking-[4px] cursor-pointer p-3 uppercase"><span
+              class="flex justify-center items-center">Brands <span class="w-4 h-4"
+                style="background: url(img/wallpaperit_sprite.png) no-repeat -158px -2px; background-size: auto;">
+              </span>
+            </span></button>
+        </li>
+        <li class="relative inline-block">
+          <button class="text-base font-semibold tracking-[4px] cursor-pointer p-3 uppercase">Wall Murals</button>
+        </li>
+        <li class="relative inline-block">
+          <button class="text-base font-semibold tracking-[4px] cursor-pointer p-3 uppercase"><span
+              class="flex justify-center items-center">Wall Art <span class="w-4 h-4"
+                style="background: url(img/wallpaperit_sprite.png) no-repeat -158px -2px; background-size: auto;">
+              </span>
+            </span></button>
+        </li>
+        <li class="relative inline-block">
+          <button class="text-base font-semibold tracking-[4px] cursor-pointer p-3 uppercase">Sale</button>
+        </li>
+      </ul>
     </nav>
 
     <div id="nav--footer" class="w-full h-20 bg-[#F8F8F8] flex flex-1 justify-evenly items-center mb-8">
@@ -183,19 +292,15 @@
           <div id="arrow-buttons" class="flex justify-between items-center gap-x-2 font-bold">
             <button id="arrow-button--left"
               class="w-8 h-8 flex flex-1 justify-center items-center border-4 border-primary--pale-teal rounded-full bg-primary--pale-teal/[0.2] cursor-pointer duration-300 hover:opacity-70">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#161615" class="bi bi-chevron-left"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-              </svg>
+              <span class="w-4 h-4 rotate-90"
+                style="background: url(img/wallpaperit_sprite.png) no-repeat -158px -4px; background-size: auto;">
+              </span>
             </button>
             <button id="arrow-button--right"
               class="w-8 h-8 flex flex-1 justify-center items-center border-4 border-primary--pale-teal rounded-full bg-primary--pale-teal/[0.2] cursor-pointer duration-300 hover:opacity-70">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
+              <span class="w-4 h-4 rotate-[270deg]"
+                style="background: url(img/wallpaperit_sprite.png) no-repeat -158px -4px; background-size: auto;">
+              </span>
             </button>
           </div>
         </div>
@@ -269,7 +374,7 @@
           class="text-primary--pale-teal italic">it</span></h1>
       <p class="font-avenir-book text-base my-5 lg:w-2/3">Designed in our studio, our fun, bright and affordable
         wallpapers are an easy and stress-free way to transform your house into a home. Too good to be true?</p>
-      <p class="font-avenir-book text-base my-5">Have a little scroll and see for yourself…</p>
+      <p class="font-avenir-book text-base my-5 lg:mt-0 lg:mb-8">Have a little scroll and see for yourself…</p>
       <div id="wi-fav" class="w-full h-full flex justify-center items-center">
         <img src="img/wi-fav.webp" alt="WallpaperIt Fav" class="w-1/5 h-1/5 sm:w-1/12 sm:h-1/12">
       </div>
@@ -323,11 +428,11 @@
         <h1 class="font-avenir-book text-lg md:text-xl text-[#FFFFFF] tracking-[4px] uppercase">Wallpaper & Paint</h1>
         <div id="flex-shop-buttons--large" class="w-full flex justify-around gap-x-4">
           <button
-            class="w-1/2 h-9 bg-[#FFFFFF] text-primary--black font-medium text-sm text-center tracking-[2px] uppercase rounded-full cursor-pointer">
+            class="w-1/2 h-12 bg-[#FFFFFF] text-primary--black font-medium text-sm text-center tracking-[2px] uppercase rounded-full cursor-pointer">
             Shop Wallpaper
           </button>
           <button
-            class="w-1/2 h-9 bg-[#FFFFFF] text-primary--black font-medium text-sm text-center tracking-[2px] uppercase rounded-full cursor-pointer">
+            class="w-1/2 h-12 bg-[#FFFFFF] text-primary--black font-medium text-sm text-center tracking-[2px] uppercase rounded-full cursor-pointer">
             Shop Paint
           </button>
         </div>
@@ -522,6 +627,15 @@
       <div id="original" class="font-avenir-book text-center text-sm text-[#FFFFFF]">&copy; 2023 WallpaperIt</div>
     </div>
   </footer>
+
+  <script>
+    const closeIcon = document.getElementById('close-icon');
+    const navHeader = document.getElementById('nav--header');
+
+    closeIcon.addEventListener('click', () => {
+      navHeader.style.display = 'none';
+    });
+  </script>
 </body>
 
 </html>
