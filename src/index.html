@@ -9,6 +9,16 @@
   <title>Wallpaper It</title>
 
   <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: flex;
+      justify-content: space-around;
+    }
+
     @media screen and (min-width: 768px) {
       #image--leopards--small {
         background-position: center center;
@@ -106,17 +116,17 @@
       </div>
 
       <ul id="navbar" class="w-full h-full flex flex-1 justify-around items-center font-avenir-book">
-        <li class="relative inline-block">
+        <li class="dropdown relative inline-block">
           <button class="text-base font-semibold tracking-[4px] cursor-pointer p-3 uppercase">
             <span class="flex justify-center items-center">Wallpaper <span class="w-4 h-4"
                 style="background: url(img/wallpaperit_sprite.png) no-repeat -158px -2px; background-size: auto;">
               </span>
             </span>
           </button>
-          <!-- <div class="dropdown-content">
-            <div class="dropdown__design-items--container">
-              <h1>Shop By Design</h1>
-              <div class="dropdown__design-items">
+          <div class="dropdown-content hidden absolute z-10 min-h-full min-w-[50vw] py-8 bg-[#FFFFFF]">
+            <div class="">
+              <h1 class="font-dm-serif text-base font-semibold mb-4">Shop By Design</h1>
+              <div class="flex flex-col justify-center">
                 <a href="#">Animal</a>
                 <a href="#">Bird</a>
                 <a href="#">Brick</a>
@@ -130,16 +140,16 @@
                 <a href="#">Trail</a>
                 <a href="#">Trees</a>
                 <a href="#">Wood</a>
-                <div class="design-items__underlined">
-                  <a href="#">View All</a>
-                  <a href="#">New Arrivals</a>
-                  <a href="#">Decorating Tools</a>
+                <div class="flex flex-col justify-center pt-10 underline">
+                  <a class="font-semibold" href="#">View All</a>
+                  <a class="font-semibold" href="#">New Arrivals</a>
+                  <a class="font-semibold" href="#">Decorating Tools</a>
                 </div>
               </div>
             </div>
-            <div class="dropdown__colour-items--container">
-              <h1>Shop By Colour</h1>
-              <div class="dropdown__colour-items">
+            <div class="">
+              <h1 class="font-dm-serif text-base font-semibold mb-4">Shop By Colour</h1>
+              <div class="flex flex-col justify-center">
                 <a href="#">Black</a>
                 <a href="#">Blue</a>
                 <a href="#">Brown</a>
@@ -160,22 +170,22 @@
                 <a href="#">Yellow</a>
               </div>
             </div>
-            <div class="dropdown__room-items--container">
-              <h1>Shop By Room</h1>
-              <div class="dropdown__room-items__1">
+            <div class="">
+              <h1 class="font-dm-serif text-base font-semibold mb-4">Shop By Room</h1>
+              <div class="flex flex-col justify-center">
                 <a href="#">Bathroom</a>
                 <a href="#">Bedroom</a>
                 <a href="#">Dining Room</a>
               </div>
-              <div class="dropdown__room-items__2">
+              <div class="flex flex-col justify-center mt-8">
                 <a href="#">Kids</a>
                 <a href="#">Kitchen</a>
                 <a href="#">Living Room</a>
               </div>
             </div>
-            <div class="dropdown__brand-items--container">
-              <h1>Shop By Brand</h1>
-              <div class="dropdown__brand-items">
+            <div class="">
+              <h1 class="font-dm-serif text-base font-semibold mb-4">Shop By Brand</h1>
+              <div class="flex flex-col justify-center">
                 <a href="#">Envy</a>
                 <a href="#">Joules</a>
                 <a href="#">Joules Kids</a>
@@ -184,7 +194,7 @@
                 <a href="#">Superfresco Easy</a>
               </div>
             </div>
-          </div> -->
+          </div>
         </li>
         <li class="relative inline-block">
           <button class="text-base font-semibold tracking-[4px] cursor-pointer p-3 uppercase"><span
@@ -307,6 +317,15 @@
       </div>
 
       <!-- TODO: adding the images and the slider to work! -->
+      <div id="logos-slider" class="w-full h-full flex justify-center items-center gap-x-12 mb-16 overflow-hidden">
+        <img id="logo-1" src="img/boutique-logo.png" alt="Boutique Logo" class="w-1/6 h-1/6">
+        <img id="logo-2" src="img/la-logo.png" alt="Laura Ashley Logo" class="w-1/6 h-1/6">
+        <img id="logo-3" src="img/next-logo.png" alt="Next Logo" class="w-1/6 h-1/6">
+        <img id="logo-4" src="img/joules-logo.png" alt="Joules Logo" class="w-1/6 h-1/6">
+        <img id="logo-5" src="img/sfe-logo.png" alt="Superfresco Easy Logo" class="w-1/6 h-1/6">
+        <img id="logo-6" src="img/sfep-logo.png" alt="Superfresco Easy Paint Logo" class="w-1/6 h-1/6">
+        <img id="logo-7" src="img/contour-logo.webp" alt="Contour Logo" class="w-1/6 h-1/6">
+      </div>
     </section>
 
     <section id="section--wallpapers-showcase-grid" class="w-full h-full">
@@ -635,6 +654,11 @@
     closeIcon.addEventListener('click', () => {
       navHeader.style.display = 'none';
     });
+
+    const arrowButtonLeft = document.getElementById('arrow-button--left');
+    const arrowButtonRight = document.getElementById('arrow-button--right');
+    
+    
   </script>
 </body>
 
