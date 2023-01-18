@@ -21,7 +21,7 @@
   <header id="header">
     <div id="nav--header" class="w-full h-10 flex justify-center items-center bg-primary--pale-teal p-3 relative">
       <span
-        class="font-avenir-book text-xs font-medium md:text-sm md:font-medium lg:text-base lg:font-medium uppercase cursor-pointer hover:underline hover:text-[#008FB2]">
+        class="font-avenir-book text-xs font-medium md:text-sm md:font-semibold lg:text-base lg:font-semibold uppercase cursor-pointer hover:underline hover:text-[#008FB2]">
         New year sale! 20% off selected wallpapers!
       </span>
       <div id="close-icon" class="absolute w-10 h-10 right-4 cursor-pointer" style="background: url(img/wallpaperit_sprite.png) no-repeat -30px -99px;
@@ -107,7 +107,31 @@
       </div>
     </nav>
 
-    <div id="nav--footer" class="w-full h-20 bg-[#F8F8F8] flex flex-1 justify-center items-center mb-8">
+    <div id="nav--footer" class="w-full h-20 bg-[#F8F8F8] flex flex-1 justify-evenly items-center mb-8">
+      <div class="flex gap-x-1 justify-center items-center cursor-pointer hover:underline">
+        <div id="nav--check-icon" class="w-7 h-7 flex flex-1 justify-center items-center">
+          <div class="w-7 h-7"
+            style="background: url(img/wallpaperit_sprite.png) no-repeat -75px -99px; background-size: auto;">
+          </div>
+        </div>
+        <!-- TODO: switching between footer links on screens with <= 1024px -->
+        <div id="nav--foter-links">
+          <span class="font-dm-serif font-semibold text-base lg:text-lg lg:font-semibold">Free Delivery</span>
+          <span class="font-avenir-book text-sm">On All Orders Over £50</span>
+        </div>
+      </div>
+      <div class="flex gap-x-1 justify-center items-center cursor-pointer hover:underline">
+        <div id="nav--check-icon" class="w-7 h-7 flex flex-1 justify-center items-center">
+          <div class="w-7 h-7"
+            style="background: url(img/wallpaperit_sprite.png) no-repeat -75px -99px; background-size: auto;">
+          </div>
+        </div>
+        <!-- TODO: switching between footer links on screens with <= 1024px -->
+        <div id="nav--foter-links">
+          <span class="font-dm-serif font-semibold text-base lg:text-lg lg:font-semibold">Customers Rate Us 4.7 /
+            5</span>
+        </div>
+      </div>
       <div class="flex gap-x-1 justify-center items-center cursor-pointer hover:underline">
         <div id="nav--check-icon" class="w-7 h-7 flex flex-1 justify-center items-center">
           <div class="w-7 h-7"
@@ -117,7 +141,7 @@
         <!-- TODO: switching between footer links on screens with <= 1024px -->
         <div id="nav--foter-links">
           <span class="font-dm-serif font-semibold text-base lg:text-lg lg:font-semibold">Order By 8pm</span>
-          <span class="font-avenir-book text-sm lg:text-base">For Next Day Delivery</span>
+          <span class="font-avenir-book text-sm">For Next Day Delivery</span>
         </div>
       </div>
     </div>
@@ -267,7 +291,7 @@
       <img src="img/twilight-ditsy-antique-hpb.jpg" alt="Twilight Ditsy Antique" class="w-full h-full">
     </section>
 
-    <section id="section--next-wallpaper-and-paint" class="w-full h-full mt-8">
+    <section id="section--next-wallpaper-and-paint--small" class="w-full h-full mt-8 lg:hidden">
       <div class="w-full h-full p-5 md:p-8 bg-primary--black/80 flex flex-col items-center gap-y-4">
         <!-- <div id="next-logo" class="min-w-[60vw] min-h-[10vh] mb-4 invert"
           style="background: url(img/next-logo.png) no-repeat; background-position: center center; background-size: 100%;">
@@ -289,6 +313,26 @@
         <img src="img/retroshapes-next.jpg" alt="Retro Shapes Next Wallpaper">
         <img src="img/ochreyellow-next.jpg" alt="Orche Yellow Next Wallpaper">
       </div>
+    </section>
+
+    <section id="section--next-wallpaper-and-paint--large"
+      class="hidden lg:w-full lg:h-full lg:mt-8 lg:grid lg:grid-cols-3">
+      <img src="img/retroshapes-next.jpg" alt="Retro Shapes Next Wallpaper">
+      <div class="w-full h-full p-12 flex flex-col justify-center items-center gap-y-8 bg-primary--black/80">
+        <img id="next-logo--large-w" src="img/next-logo.png" alt="Next Logo" class="w-full h-1/5 invert">
+        <h1 class="font-avenir-book text-lg md:text-xl text-[#FFFFFF] tracking-[4px] uppercase">Wallpaper & Paint</h1>
+        <div id="flex-shop-buttons--large" class="w-full flex justify-around gap-x-4">
+          <button
+            class="w-1/2 h-9 bg-[#FFFFFF] text-primary--black font-medium text-sm text-center tracking-[2px] uppercase rounded-full cursor-pointer">
+            Shop Wallpaper
+          </button>
+          <button
+            class="w-1/2 h-9 bg-[#FFFFFF] text-primary--black font-medium text-sm text-center tracking-[2px] uppercase rounded-full cursor-pointer">
+            Shop Paint
+          </button>
+        </div>
+      </div>
+      <img src="img/ochreyellow-next.jpg" alt="Orche Yellow Next Wallpaper">
     </section>
 
     <section id="section--comments" class="w-full h-full mt-16">
